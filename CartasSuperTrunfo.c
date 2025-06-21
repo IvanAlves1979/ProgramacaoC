@@ -22,10 +22,10 @@ int main()
     scanf("%d", &populacao);
 
     printf("Area total da cidade Km2: ");
-    scanf("%d", &area);
+    scanf("%f", &area);
 
     printf("Digite o PIB: ");
-    scanf("%d", &PIB);
+    scanf("%f", &PIB);
 
     printf("Quantidade de pontos turísticos: ");
     scanf("%d", &pontos);
@@ -46,10 +46,10 @@ int main()
     scanf("%d", &populacao2);
 
     printf("Area total da cidade Km2: ");
-    scanf("%d", &area2);
+    scanf("%f", &area2);
 
     printf("Digite o PIB: ");
-    scanf("%d", &PIB2);
+    scanf("%f", &PIB2);
 
     printf("Quantidade de pontos turísticos: ");
     scanf("%d", &pontos2);
@@ -59,8 +59,8 @@ int main()
     printf("Estado %s - Codigo: %s ** Estado %s - Codigo: %s\n", estado, codigo, estado2, codigo2);
     printf("Cidade %s *** Cidade %s\n", cidade, cidade2);
     printf("População %s - %d *********** População %s - %d\n", cidade, populacao, cidade2, populacao2);
-    printf("Area Km2 %.2f - %d ************ Area Km2 %.2f - %d\n", cidade, area, cidade2, area2);
-    printf("Total PIB %.2f - %d *********** Total PIB %.2f - %d\n", cidade, PIB, cidade2, PIB2);
+    printf("Area Km2 %s - %.2f ************ Area Km2 %s - %.2f\n", cidade, area, cidade2, area2);
+    printf("Total PIB %s - %.2f *********** Total PIB %s - %.2f\n", cidade, PIB, cidade2, PIB2);
     printf("Pontos Turísticos %s - %d *** Pontos Turísticos %s - %d\n\n", cidade, pontos, cidade2, pontos2);
 
 
