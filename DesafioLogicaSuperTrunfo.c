@@ -8,7 +8,7 @@ int main()
     char codigo[4], codigo2[4];
     char cidade[40], cidade2[40];
     int populacao, pontos, populacao2, pontos2;
-    float area, PIB, area2, PIB2, densidade, densidade2;
+    float area, PIB, area2, PIB2, densidade, densidade2, capita, capita2;
 
     /*Cadastro Carta 1*/
     printf("### Cadastro da Primeira Carta ###\n");
@@ -57,6 +57,20 @@ int main()
     printf("Quantidade de pontos turisticos: ");
     scanf("%d", &pontos2);
     printf("\n\n");
+    
+    if (populacao != 0){
+        capita = PIB / populacao;
+        printf("O PIB per capita de %s: R$ %.2f \n", cidade, capita);
+    } else {
+        printf("A populacao nao pode ser zero!\n");
+    }
+
+    if (populacao2 != 0){
+        capita2 = PIB2 / populacao2;
+        printf("O PIB per capita de %s: R$ %.2f \n", cidade2, capita2);
+    } else {
+        printf("A populacao nao pode ser zero!\n");
+    }
 
     if (area != 0){
         densidade = populacao / area;
